@@ -1,0 +1,12 @@
+household_power_consumption.csv
+outputs/models/*.pkl
+outputs/models/*.keras
+outputs/plots/
+outputs/reports/
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.vscode/
+.streamlit/secrets.toml

@@ -1,0 +1,37 @@
+{
+  "missing_before": {
+    "Global_active_power": 25979,
+    "Global_reactive_power": 25979,
+    "Voltage": 25979,
+    "Global_intensity": 25979,
+    "Sub_metering_1": 25979,
+    "Sub_metering_2": 25979,
+    "Sub_metering_3": 25979
+  },
+  "missing_pct": {
+    "Global_active_power": 1.25,
+    "Global_reactive_power": 1.25,
+    "Voltage": 1.25,
+    "Global_intensity": 1.25,
+    "Sub_metering_1": 1.25,
+    "Sub_metering_2": 1.25,
+    "Sub_metering_3": 1.25
+  },
+  "duplicate_timestamps": 0,
+  "invalid_power_rows": 0,
+  "invalid_voltage_rows": 0,
+  "missing_after": {
+    "Global_active_power": 0,
+    "Global_reactive_power": 0,
+    "Voltage": 0,
+    "Global_intensity": 0,
+    "Sub_metering_1": 0,
+    "Sub_metering_2": 0,
+    "Sub_metering_3": 0
+  },
+  "total_rows": 2050108,
+  "date_range": [
+    "2006-12-16 17:24:00",
+    "2010-11-26 21:02:00"
+  ]
+}

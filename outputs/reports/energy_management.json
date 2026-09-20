@@ -1,0 +1,103 @@
+{
+  "peak_hours_historical": [
+    20,
+    21,
+    19,
+    7,
+    8
+  ],
+  "peak_hours_forecast": [
+    21,
+    20,
+    19,
+    7,
+    8
+  ],
+  "union_peak_hours": [
+    7,
+    8,
+    19,
+    20,
+    21
+  ],
+  "threshold": 1.8477,
+  "stats": {
+    "mean_predicted": 1.0326,
+    "max_predicted": 4.0714,
+    "threshold": 1.8477,
+    "peak_count": 681,
+    "pct_peaks": 10.0
+  },
+  "voltage_alerts": {
+    "pct_below_220": 0.0,
+    "pct_above_240": 64.65
+  },
+  "recommendations": [
+    {
+      "category": "load_shift",
+      "icon": "SHIFT",
+      "title": "Shift Flexible Loads to Off-Peak",
+      "detail": "High demand is expected around 07:00, 08:00, 19:00, 20:00, 21:00. Move washing-machine cycles, dishwasher runs, and EV charging to off-peak windows (01:00-06:00) to reduce peak grid stress.",
+      "hours": [
+        7,
+        8,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "category": "hvac",
+      "icon": "HVAC",
+      "title": "Pre-condition HVAC Before Peak Windows",
+      "detail": "Sub-metering 3 (HVAC) is the largest flexible load. Start pre-cooling / pre-heating 30-60 minutes before 07:00, 08:00, 19:00, 20:00, 21:00 so the system can coast during the peak without full power draw.",
+      "hours": [
+        7,
+        8,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "category": "battery",
+      "icon": "BATT",
+      "title": "Pre-charge Storage During Off-Peak (01:00-06:00)",
+      "detail": "If a home battery or EV with V2H capability is available, schedule charging between 01:00 and 06:00 when average demand is lowest. Discharge during the predicted peak window (07:00, 08:00, 19:00, 20:00, 21:00) to reduce grid import and lower time-of-use tariff costs.",
+      "hours": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "category": "voltage",
+      "icon": "VOLT",
+      "title": "Monitor Voltage During Peak Hours (07:00, 08:00, 19:00, 20:00, 21:00)",
+      "detail": "Target: 220.0-240.0 V. Historical out-of-band readings: 0.0% below 220.0 V, 64.65% above 240.0 V. Voltage sags often coincide with peak-demand periods - enable alerts on your smart meter or energy monitor.",
+      "hours": [
+        7,
+        8,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "category": "tariff",
+      "icon": "COST",
+      "title": "Review Time-of-Use Tariff Alignment",
+      "detail": "Peak demand clusters at 07:00, 08:00, 19:00, 20:00, 21:00. Check whether your energy supplier's peak tariff windows overlap with these hours. Even a 30-minute shift in large appliance usage can meaningfully reduce your monthly electricity bill.",
+      "hours": [
+        7,
+        8,
+        19,
+        20,
+        21
+      ]
+    }
+  ]
+}
